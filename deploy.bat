@@ -8,17 +8,16 @@
 chcp 65001 > nul
 setlocal enabledelayedexpansion
 title 🛠️ Hugo 部署助手
-color 0B
+color 0A
 
 :: 生成时间戳
-set "DATE_STAMP=%DATE:/=-%"
-set "TIME_STAMP=%TIME::=-%"
-set "TIMESTAMP=!DATE_STAMP:~0,10!_!TIME_STAMP:~0,8!"
+set "TIMESTAMP=%DATE:/=-%_%TIME::=-%"
+set "TIMESTAMP=%TIMESTAMP: =0%"
 
 :: 主流程
 echo.
 echo =============================================
-echo               HUGO 自动化部署工具
+echo               博客自动化部署工具
 echo =============================================
 echo 开始时间：!TIMESTAMP!
 echo.
