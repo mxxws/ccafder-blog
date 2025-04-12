@@ -4,9 +4,6 @@ hugo -D
 
 cd .\public\
 
-git add .
-git commit -m "第2次提交博客静态文件"
-git push -u origin main
 
 
 cd ..
