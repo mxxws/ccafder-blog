@@ -1,0 +1,15 @@
+baseURL = 'https://mxxws.github.io/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'FixIt'
+defaultContentLanguage = 'zh-cn'
+[markup]
+  _merge = "shallow"
+[outputs]
+  _merge = "shallow"
+[taxonomies]
+  _merge = "shallow"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
