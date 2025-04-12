@@ -46,7 +46,7 @@ echo.
 echo ============================================
 echo              所有操作已完成！
 echo ============================================
-timeout /t 3 > nul
+pause  :: 
 exit /b 0
 
 :error_handling
@@ -59,4 +59,5 @@ echo 建议排查方向：
 echo 1. 检查网络连接状态
 echo 2. 验证Git配置有效性
 echo 3. 查看详细日志（运行时不加@echo off）
+pause  ::
 exit /b 1
