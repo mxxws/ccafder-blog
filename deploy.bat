@@ -23,10 +23,10 @@ echo.
 echo [ 正在暂存文件... ]
 @git add . >nul 2>&1
 if errorlevel 1 (
-    echo [×] 扫描文件变更失败
+    echo [❎] 扫描文件变更失败
     goto error_handling
 ) else (
-    echo [√] 文件已暂存
+    echo [✅] 文件已暂存
 )
 
 :: 步骤 2：提交更改
@@ -34,10 +34,10 @@ echo.
 echo [ 正在提交更改... ]
 @git commit -m "AutoDeploy: !TIMESTAMP!" >nul 2>&1
 if errorlevel 1 (
-    echo [×] 提交记录生成失败
+    echo [❎] 提交记录生成失败
     goto error_handling
 ) else (
-    echo [√] 提交已完成
+    echo [✅] 提交已完成
 )
 
 :: 步骤 3：推送至远程仓库
@@ -45,10 +45,10 @@ echo.
 echo [ 正在推送至远程仓库... ]
 @git push origin main >nul 2>&1
 if errorlevel 1 (
-    echo [×] 云端同步失败
+    echo [❎] 云端同步失败
     goto error_handling
 ) else (
-    echo [√] 已推送至 origin/main
+    echo [✅] 已推送至 origin/main
 )
 
 echo.
@@ -57,7 +57,8 @@ echo              所有操作已完成！
 echo ============================================
 echo.
 echo [ 任务完成，按任意键继续... ]
-pause
+set /p= <nul  :: 这个空操作用于阻止换行
+pause > nul
 exit /b 0
 
 :error_handling
