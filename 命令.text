@@ -1,0 +1,23 @@
+hugo server
+
+hugo -D
+
+cd .\public\
+
+
+
+git reset --hard 6abf7dc25e2650656933a12ff3e4853aff3d4028
+
+git log
+
+111
+git push -u origin main
+
+git push -u origin main --force
+
+git commit -m "首次提交博客静态文件"
+
+
+git add .
+git commit -m "自动部署"
+git push origin main
