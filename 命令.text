@@ -4,7 +4,7 @@ hugo -D
 
 cd .\public\
 
-1
+
 
 git reset --hard 6abf7dc25e2650656933a12ff3e4853aff3d4028
 
