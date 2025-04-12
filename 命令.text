@@ -9,7 +9,7 @@ cd .\public\
 git reset --hard 6abf7dc25e2650656933a12ff3e4853aff3d4028
 
 git log
-
+1
 111
 
 git push -u origin main

@@ -26,17 +26,17 @@ echo.
 :: 步骤1：添加文件
 echo 步骤 1/3  扫描文件变更...
 git add . || goto error_handling
-echo [√] 检测到 !errorlevel! 个文件变更
+echo [✔️] 检测到 !errorlevel! 个文件变更
 
 :: 步骤2：本地提交
 echo 步骤 2/3  生成提交记录...
 git commit -m "AutoDeploy: !TIMESTAMP!" || goto error_handling
-echo [√] 提交描述：!TIMESTAMP!
+echo [✔️] 提交描述：!TIMESTAMP!
 
 :: 步骤3：推送到GitHub
 echo 步骤 3/3  同步到云端...
 git push origin main || goto error_handling
-echo [√] 已推送至 origin/main 分支
+echo [✔️] 已推送至 origin/main 分支
 
 :: 成功完成提示
 echo.
