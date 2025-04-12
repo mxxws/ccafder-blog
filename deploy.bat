@@ -1,63 +1,62 @@
 @echo off
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-:: Hugo 自动化部署脚本 (优化版)
-:: 功能：带美观提示的 git 操作流程
-:: 编码：UTF-8 with BOM（完美兼容中文）
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
 chcp 65001 > nul
 setlocal enabledelayedexpansion
 title 🛠️ Hugo 部署助手
 color 0A
 
-:: 生成时间戳
-set "TIMESTAMP=%DATE:/=-%_%TIME::=-%"
-set "TIMESTAMP=%TIMESTAMP: =0%"
+:: 生成标准化的时间戳（YYYY-MM-DD-HH-MM）
+for /f "tokens=2 delims==" %%a in ('wmic os get LocalDateTime /value') do set "DateTime=%%a"
+set "FormattedDate=!DateTime:~0,4!-!DateTime:~4,2!-!DateTime:~6,2!"
+set "FormattedTime=!DateTime:~8,2!-!DateTime:~10,2!"
+set "TIMESTAMP=!FormattedDate!-!FormattedTime!"
 
-:: 主流程
+:: 主流程（隐藏命令执行输出）
 echo.
-echo =============================================
-echo               博客自动化部署工具
-echo =============================================
+echo ============================================
+echo              博客自动化部署工具
+echo ============================================
 echo 开始时间：!TIMESTAMP!
 echo.
 
-:: 步骤1：添加文件
-echo 步骤 1/3  扫描文件变更...
-git add . || goto error_handling
-echo [✔️] 检测到 !errorlevel! 个文件变更
+@git add . >nul 2>&1
+if errorlevel 1 (
+    echo [×] 扫描文件变更失败
+    goto error_handling
+) else (
+    echo [√] 文件已暂存
+)
 
-:: 步骤2：本地提交
-echo 步骤 2/3  生成提交记录...
-git commit -m "AutoDeploy: !TIMESTAMP!" || goto error_handling
-echo [✔️] 提交描述：!TIMESTAMP!
+@git commit -m "AutoDeploy: !TIMESTAMP!" >nul 2>&1
+if errorlevel 1 (
+    echo [×] 提交记录生成失败
+    goto error_handling
+) else (
+    echo [√] 提交已完成
+)
 
-:: 步骤3：推送到GitHub
-echo 步骤 3/3  同步到云端...
-git push origin main || goto error_handling
-echo [✔️] 已推送至 origin/main 分支
+@git push origin main >nul 2>&1
+if errorlevel 1 (
+    echo [×] 云端同步失败
+    goto error_handling
+) else (
+    echo [√] 已推送至 origin/main
+)
 
-:: 成功完成提示
 echo.
-echo =============================================
-echo               所有操作已完成！
-echo =============================================
-echo 按任意键关闭窗口...
-pause > nul
+echo ============================================
+echo              所有操作已完成！
+echo ============================================
+timeout /t 3 > nul
 exit /b 0
 
-:: 错误处理模块
 :error_handling
 echo.
-echo =============================================
+echo ============================================
 echo               执行过程遇到错误
-echo =============================================
-echo 错误代码：!errorlevel!
-echo 可能原因：
-echo 1. 无文件变更 (代码1)
-echo 2. 网络连接失败 (代码128)
-echo 3. 身份验证失败 (代码403)
-echo =============================================
-echo 按任意键查看解决方案建议...
-pause > nul
+echo ============================================
+echo 最后操作时间：!TIMESTAMP!
+echo 建议排查方向：
+echo 1. 检查网络连接状态
+echo 2. 验证Git配置有效性
+echo 3. 查看详细日志（运行时不加@echo off）
 exit /b 1

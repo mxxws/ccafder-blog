@@ -16,7 +16,7 @@ git push -u origin main
 git push -u origin main --force
 
 
-
+1
 git commit -m "首次提交博客静态文件"
 
 
