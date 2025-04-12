@@ -19,9 +19,6 @@ set "day=!DateTime:~6,2!"
 set "hour=!DateTime:~8,2!"
 set "minute=!DateTime:~10,2!"
 set "second=!DateTime:~12,2!"
-:: 去除月/日的前导零
-if "!month:~0,1!"=="0" set "month=!month:~1!"
-if "!day:~0,1!"=="0" set "day=!day:~1!"
 set "BEGIN_TIME=!year!年!month!月!day!日!hour!点!minute!分!second!秒"
 
 :: 主流程（隐藏命令执行输出）
@@ -73,16 +70,14 @@ set "end_day=!EndDateTime:~6,2!"
 set "end_hour=!EndDateTime:~8,2!"
 set "end_minute=!EndDateTime:~10,2!"
 set "end_second=!EndDateTime:~12,2!"
-if "!end_month:~0,1!"=="0" set "end_month=!end_month:~1!"
-if "!end_day:~0,1!"=="0" set "end_day=!end_day:~1!"
 set "END_TIME=!end_year!年!end_month!月!end_day!日!end_hour!点!end_minute!分!end_second!秒"
 
 
 echo.
+echo 结束时间：!END_TIME!
 echo ============================================
 echo              所有操作已完成！
 echo ============================================
-echo 结束时间：!END_TIME!
 echo.
 echo [ 任务完成，按任意键继续... ]
 set /p= <nul  
