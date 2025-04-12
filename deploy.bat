@@ -4,11 +4,25 @@ setlocal enabledelayedexpansion
 title 🛠️ Hugo 部署助手
 color 0A
 
-:: 生成标准化的时间戳（YYYY-MM-DD-HH-MM）
+:: 生成时间戳（原始格式+中文格式）
 for /f "tokens=2 delims==" %%a in ('wmic os get LocalDateTime /value') do set "DateTime=%%a"
+
+:: 原始时间戳（用于提交记录）
 set "FormattedDate=!DateTime:~0,4!-!DateTime:~4,2!-!DateTime:~6,2!"
 set "FormattedTime=!DateTime:~8,2!-!DateTime:~10,2!"
 set "TIMESTAMP=!FormattedDate!-!FormattedTime!"
+
+:: 中文格式开始时间
+set "year=!DateTime:~0,4!"
+set "month=!DateTime:~4,2!"
+set "day=!DateTime:~6,2!"
+set "hour=!DateTime:~8,2!"
+set "minute=!DateTime:~10,2!"
+set "second=!DateTime:~12,2!"
+:: 去除月/日的前导零
+if "!month:~0,1!"=="0" set "month=!month:~1!"
+if "!day:~0,1!"=="0" set "day=!day:~1!"
+set "BEGIN_TIME=!year!年!month!月!day!日!hour!点!minute!分!second!秒"
 
 :: 主流程（隐藏命令执行输出）
 echo.
@@ -51,17 +65,43 @@ if errorlevel 1 (
     echo [✅] 已推送至 origin/main
 )
 
+:: 生成中文格式结束时间
+for /f "tokens=2 delims==" %%a in ('wmic os get LocalDateTime /value') do set "EndDateTime=%%a"
+set "end_year=!EndDateTime:~0,4!"
+set "end_month=!EndDateTime:~4,2!"
+set "end_day=!EndDateTime:~6,2!"
+set "end_hour=!EndDateTime:~8,2!"
+set "end_minute=!EndDateTime:~10,2!"
+set "end_second=!EndDateTime:~12,2!"
+if "!end_month:~0,1!"=="0" set "end_month=!end_month:~1!"
+if "!end_day:~0,1!"=="0" set "end_day=!end_day:~1!"
+set "END_TIME=!end_year!年!end_month!月!end_day!日!end_hour!点!end_minute!分!end_second!秒"
+
+
 echo.
 echo ============================================
 echo              所有操作已完成！
 echo ============================================
 echo.
 echo [ 任务完成，按任意键继续... ]
-set /p= <nul  :: 
+set /p= <nul  
 pause > nul
 exit /b 0
 
+
 :error_handling
+:: 错误时生成结束时间
+for /f "tokens=2 delims==" %%a in ('wmic os get LocalDateTime /value') do set "EndDateTime=%%a"
+set "end_year=!EndDateTime:~0,4!"
+set "end_month=!EndDateTime:~4,2!"
+set "end_day=!EndDateTime:~6,2!"
+set "end_hour=!EndDateTime:~8,2!"
+set "end_minute=!EndDateTime:~10,2!"
+set "end_second=!EndDateTime:~12,2!"
+if "!end_month:~0,1!"=="0" set "end_month=!end_month:~1!"
+if "!end_day:~0,1!"=="0" set "end_day=!end_day:~1!"
+set "END_TIME=!end_year!年!end_month!月!end_day!日!end_hour!点!end_minute!分!end_second!秒"
+
 echo.
 echo ============================================
 echo               执行过程遇到错误
