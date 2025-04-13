@@ -1,3 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My New Hugo Site</title><link>https://mxxws.github.io/</link><description>My New Hugo Site</description><generator>Hugo 0.145.0 &amp; FixIt v0.3.17-40c5dcb8</generator><language>en-us</language><lastBuildDate>Sat, 12 Apr 2025 23:00:19 +0800</lastBuildDate><atom:link href="https://mxxws.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>我的第1篇文章-测试</title><link>https://mxxws.github.io/posts/583bc6c/</link><pubDate>Sat, 12 Apr 2025 23:00:19 +0800</pubDate><guid>https://mxxws.github.io/posts/583bc6c/</guid><category domain="https://mxxws.github.io/categories/draft/">Draft</category><description>&lt;p>你好，世界。&lt;/p>
-&lt;p>1111
-测试中&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ccafderの世界</title><link>https://mxxws.github.io/</link><description>正是江南好风景，落花时节又逢君。</description><generator>Hugo 0.145.0 &amp; FixIt v0.3.17-40c5dcb8</generator><language>en-us</language><managingEditor>ccafder@gmail.com (ccafder)</managingEditor><webMaster>ccafder@gmail.com (ccafder)</webMaster><lastBuildDate>Sat, 12 Apr 2025 23:00:19 +0800</lastBuildDate><atom:link href="https://mxxws.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>测试</title><link>https://mxxws.github.io/posts/583bc6c/</link><pubDate>Sat, 12 Apr 2025 23:00:19 +0800</pubDate><author>ccafder@gmail.com (ccafder)</author><guid>https://mxxws.github.io/posts/583bc6c/</guid><category domain="https://mxxws.github.io/categories/draft/">Draft</category><description>&lt;p>七律·和郭沫若同志&lt;/p>
+&lt;p>作者：毛泽东&lt;/p>
+&lt;p>一从大地起风雷，便有精生白骨堆 。&lt;/p>
+&lt;p>僧是愚氓犹可训，妖为鬼蜮必成灾。&lt;/p>
+&lt;p>金猴奋起千钧棒，玉宇澄清万里埃 。&lt;/p>
+&lt;p>今日欢呼孙大圣，只缘妖雾又重来。&lt;/p>
+&lt;h2 id="1" class="heading-element">&lt;span>1&lt;/span>
+ &lt;a href="#1" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>作者：毛泽东&lt;/p>
+&lt;p>一从大地起风雷，便有精生白骨堆 。&lt;/p>
+&lt;p>僧是愚氓犹可训，妖为鬼蜮必成灾。&lt;/p>
+&lt;p>金猴奋起千钧棒，玉宇澄清万里埃 。&lt;/p>
+&lt;p>今日欢呼孙大圣，只缘妖雾又重来。&lt;/p>
+&lt;h2 id="2" class="heading-element">&lt;span>2&lt;/span>
+ &lt;a href="#2" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h2>&lt;p>作者：毛泽东&lt;/p>
+&lt;p>一从大地起风雷，便有精生白骨堆 。&lt;/p>
+&lt;p>僧是愚氓犹可训，妖为鬼蜮必成灾。&lt;/p>
+&lt;p>金猴奋起千钧棒，玉宇澄清万里埃 。&lt;/p>
+&lt;p>今日欢呼孙大圣，只缘妖雾又重来。&lt;/p>
+&lt;h3 id="3你好" class="heading-element">&lt;span>3你好&lt;/span>
+ &lt;a href="#3%e4%bd%a0%e5%a5%bd" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h3>&lt;p>作者：毛泽东&lt;/p>
+&lt;p>一从大地起风雷，便有精生白骨堆 。&lt;/p>
+&lt;p>僧是愚氓犹可训，妖为鬼蜮必成灾。&lt;/p>
+&lt;p>金猴奋起千钧棒，玉宇澄清万里埃 。&lt;/p>
+&lt;p>今日欢呼孙大圣，只缘妖雾又重来。&lt;/p>
+&lt;h4 id="4好" class="heading-element">&lt;span>4好&lt;/span>
+ &lt;a href="#4%e5%a5%bd" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h4>&lt;p>作者：毛泽东&lt;/p>
+&lt;p>一从大地起风雷，便有精生白骨堆 。&lt;/p>
+&lt;p>僧是愚氓犹可训，妖为鬼蜮必成灾。&lt;/p>
+&lt;p>金猴奋起千钧棒，玉宇澄清万里埃 。&lt;/p>
+&lt;p>今日欢呼孙大圣，只缘妖雾又重来。&lt;/p>
+&lt;h5 id="你好你好" class="heading-element">&lt;span>你好你好&lt;/span>
+ &lt;a href="#%e4%bd%a0%e5%a5%bd%e4%bd%a0%e5%a5%bd" class="heading-mark">
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true">&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">&lt;/path>&lt;/svg>
+ &lt;/a>
+&lt;/h5>&lt;p>的1111&lt;/p></description></item><item><title>你好世界</title><link>https://mxxws.github.io/posts/583bc6c/</link><pubDate>Sat, 12 Apr 2025 23:00:19 +0800</pubDate><author>ccafder@gmail.com (ccafder)</author><guid>https://mxxws.github.io/posts/583bc6c/</guid><category domain="https://mxxws.github.io/categories/draft/">Draft</category><description>&lt;p>七律·和郭沫若同志&lt;/p>
+&lt;p>作者：毛泽东&lt;/p>
+&lt;p>一从大地起风雷，便有精生白骨堆 。&lt;/p>
+&lt;p>僧是愚氓犹可训，妖为鬼蜮必成灾。&lt;/p>
+&lt;p>金猴奋起千钧棒，玉宇澄清万里埃 。&lt;/p>
+&lt;p>今日欢呼孙大圣，只缘妖雾又重来。&lt;/p></description></item></channel></rss>
