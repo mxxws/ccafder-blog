@@ -1,4 +1,4 @@
-# 关于ccafder
+# 关于我
 
 
 &lt;!--more--&gt;
@@ -20,6 +20,6 @@
 
 ---
 
-> 作者: [ccafder](https://mxxws.github.io/)  
+> 作者: [mxxws](https://mxxws.github.io/)  
 > URL: https://mxxws.github.io/posts/b3cbf8e/  
 
