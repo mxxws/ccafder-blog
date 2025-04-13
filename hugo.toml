@@ -75,14 +75,14 @@ defaultContentLanguage = 'zh-cn'
 [params]
   version = "0.3.X"
   description = "正是江南好风景，落花时节又逢君。"
-  keywords = ["Hugo", "blog", "mxxws"]
+  keywords = ["ccafder", "blog", "落花世界又逢军"]
   
   #作者配置
   [params.author]
     name = "ccafder"
     email = "ccafder@gmail.com"
-    link = ""
-    avatar = ""
+    link = "https://mxxws.github.io/"
+    avatar = "qsrwx2018gmail.com"
   
   #主页配置
   [params.home]
@@ -90,7 +90,7 @@ defaultContentLanguage = 'zh-cn'
     [params.home.profile]
       enable = true
       gravatarEmail = ""
-      avatarURL = ""
+      avatarURL = "https://github.com/mxxws/picx-images-hosting/raw/master/赛博朋克头像青年.99tjh5drq7.webp"
       avatarMenu = ""
       title = "ccafder"
       subtitle = "正是江南好风景，落花时节又逢君。"
