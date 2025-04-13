@@ -21,3 +21,11 @@ git commit -m "首次提交博客静态文件"
 git add .
 git commit -m "自动部署"
 git push origin main
+
+
+
+升级主题
+git submodule update --remote --merge themes/FixIt
+
+
+写文章直接复制markdown文件即可。
