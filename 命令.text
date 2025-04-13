@@ -30,5 +30,5 @@ git submodule update --remote --merge themes/FixIt
 
 写文章直接复制markdown文件即可。
 
-或者控制台
+或者控制台输入指令
 hugo new posts/关于ccafder.md
