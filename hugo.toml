@@ -1,7 +1,7 @@
 #根配置
 baseURL = 'https://mxxws.github.io/'
 languageCode = 'en-us'
-title = 'ccafderの世界'
+title = 'mxxwsの世界'
 theme = 'FixIt'
 defaultContentLanguage = 'zh-cn'
 
@@ -75,14 +75,14 @@ defaultContentLanguage = 'zh-cn'
 [params]
   version = "0.3.X"
   description = "正是江南好风景，落花时节又逢君。"
-  keywords = ["ccafder", "blog", "落花世界又逢军"]
+  keywords = ["mxxws", "blog", "落花世界又逢君"]
   
   #作者配置
   [params.author]
-    name = "ccafder"
-    email = "ccafder@gmail.com"
+    name = "mxxws"
+    email = ""
     link = "https://mxxws.github.io/"
-    avatar = "qsrwx2018gmail.com"
+    avatar = "https://github.com/mxxws/picx-images-hosting/raw/master/赛博朋克头像青年.99tjh5drq7.webp"
   
   #主页配置
   [params.home]
@@ -92,7 +92,7 @@ defaultContentLanguage = 'zh-cn'
       gravatarEmail = ""
       avatarURL = "https://github.com/mxxws/picx-images-hosting/raw/master/赛博朋克头像青年.99tjh5drq7.webp"
       avatarMenu = ""
-      title = "ccafder"
+      title = "mxxws"
       subtitle = "正是江南好风景，落花时节又逢君。"
       typeit = true
       social = true
@@ -330,7 +330,7 @@ defaultContentLanguage = 'zh-cn'
         # bitcoin = "/images/bitcoin.png"
     # 文章页面的分享信息设置
     [params.page.share]
-      enable = true
+      enable = false
       Twitter = true
       Facebook = true
       Linkedin = false
