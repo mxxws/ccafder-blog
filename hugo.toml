@@ -82,7 +82,7 @@ defaultContentLanguage = 'zh-cn'
     name = "mxxws"
     email = ""
     link = "https://mxxws.github.io/"
-    avatar = "https://github.com/mxxws/picx-images-hosting/raw/master/赛博朋克头像青年-(1).6pnp4iyvq3.webp"
+    avatar = "https://github.com/mxxws/picx-images-hosting/raw/master/mxxws-avatar.2ks3sf9q4a.webp"
   
   #主页配置
   [params.home]
@@ -90,7 +90,7 @@ defaultContentLanguage = 'zh-cn'
     [params.home.profile]
       enable = true
       gravatarEmail = ""
-      avatarURL = "https://github.com/mxxws/picx-images-hosting/raw/master/赛博朋克头像青年.99tjh5drq7.webp"
+      avatarURL = "https://github.com/mxxws/picx-images-hosting/raw/master/mxxws-avatar.2ks3sf9q4a.webp"
       avatarMenu = ""
       title = "mxxws"
       subtitle = "正是江南好风景，落花时节又逢君。"
