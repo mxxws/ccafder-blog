@@ -1,62 +1,35 @@
-# 工作流名称（显示在 GitHub Actions 界面）
 name: Deploy Hugo Site
 
-# 触发条件
 on:
   push:
-    branches: [main]  # 仅在 main 分支推送时触发
-  workflow_dispatch:  # 允许手动触发工作流（可选）
+    branches: [main]
 
-# 任务定义
 jobs:
-  build-deploy:  # 任务ID（可自定义）
-    runs-on: ubuntu-latest  # 使用最新版 Ubuntu 系统
-
-    # 定义任务步骤
+  build-deploy:
+    runs-on: ubuntu-latest
     steps:
-      # 步骤1：拉取代码
       - name: Checkout Code
-        uses: actions/checkout@v4  # 官方代码拉取 Action
+        uses: actions/checkout@v4  
         with:
-          submodules: recursive    # 递归拉取子模块（适用于 Hugo 主题）
-          fetch-depth: 0           # 拉取全部提交历史（某些插件可能需要）
+          submodules: recursive    
+          fetch-depth: 0          
 
-      # 步骤2：缓存 Hugo 构建结果（加速后续构建）
-      - name: Cache Hugo Resources
-        uses: actions/cache@v3
-        with:
-          path: |
-            public                # 缓存生成的静态文件
-            resources/_gen        # 缓存 Hugo 内部资源
-          key: ${{ runner.os }}-hugo-${{ hashFiles('hugo.toml') }}  # 根据配置文件变化更新缓存
-
-      # 步骤3：安装 Hugo 环境
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3  # 第三方 Hugo 安装工具
+        uses: peaceiris/actions-hugo@v3  
         with:
-          hugo-version: '0.145.0'  # 指定 Hugo 版本（与本地环境一致）
-          extended: true           # 启用扩展版（支持 Sass/SCSS）
+          hugo-version: '0.145.0'
+          extended: true          
 
-      # 步骤4：构建 Hugo 静态网站
       - name: Build
-        run: hugo --minify --gc --cleanDestinationDir  # 构建命令
-        env:
-          # 从 GitHub Secrets 注入敏感数据（避免硬编码）
-          GISCUS_REPO_ID: ${{ secrets.GISCUS_REPO_ID }}
-          GISCUS_CATEGORY_ID: ${{ secrets.GISCUS_CATEGORY_ID }}
-        # 参数说明：
-        # --minify : 压缩 HTML/CSS/JS 输出
-        # --gc     : 清理未使用的缓存文件
-        # --cleanDestinationDir : 强制清空输出目录
+        run: |
+          hugo --minify --gc --cleanDestinationDir
+          # 推荐添加构建参数：
+          # --gc   : 清理未用缓存
+          # --cleanDestinationDir : 强制清空输出目录
 
-      # 步骤5：部署到 GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3  # 官方部署工具
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # 自动生成的鉴权 Token
-          publish_dir: ./public           # 静态文件所在目录
-          publish_branch: gh-pages        # 目标分支（GitHub Pages 默认读取此分支）
-          # 可选参数：
-          # force_orphan: true          # 强制清空目标分支历史（保持干净）
-          # user_name: 'github-actions' # 自定义提交者名称
-          # user_email: 'actions@github.com'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages  
