@@ -355,25 +355,24 @@ defaultContentLanguage = 'zh-cn'
       Skype = false
       Trello = false
       Mix = false
-    #  评论系统设置
     [params.page.comment]
       enable = true
-      #  Artalk 评论系统设置 (https://artalk.js.org/)
+      # FixIt 0.2.13 | NEW Artalk comment config (https://artalk.js.org/)
       [params.page.comment.artalk]
         enable = false
         server = "https://yourdomain"
         site = "默认站点"
-        #  是否使用后端配置
+        # FixIt 0.3.3 | NEW whether use backend configuration
         useBackendConf = false
         placeholder = ""
         noComment = ""
         sendBtn = ""
         editorTravel = true
         flatMode = "auto"
-        #  启用 lightgallery 支持
+        # FixIt 0.2.17 | CHANGED enable lightgallery support
         lightgallery = false
-        locale = "" # 
-        # 
+        locale = "" # FixIt 0.2.15 | NEW
+        # FixIt 0.2.18 | NEW
         emoticons = ""
         nestMax = 2
         nestSort = "DATE_ASC" # ["DATE_ASC", "DATE_DESC", "VOTE_UP_DESC"]
@@ -384,19 +383,19 @@ defaultContentLanguage = 'zh-cn'
         imgUpload = true
         preview = true
         versionCheck = true
-      #  Disqus 评论系统设置 (https://disqus.com)
+      # Disqus comment config (https://disqus.com)
       [params.page.comment.disqus]
         enable = false
-        # Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
+        # Disqus shortname to use Disqus in posts
         shortname = ""
-      #  Gitalk 评论系统设置 (https://github.com/gitalk/gitalk)
+      # Gitalk comment config (https://github.com/gitalk/gitalk)
       [params.page.comment.gitalk]
         enable = false
         owner = ""
         repo = ""
         clientId = ""
         clientSecret = ""
-      # Valine 评论系统设置 (https://github.com/xCss/Valine)
+      # Valine comment config (https://github.com/xCss/Valine)
       [params.page.comment.valine]
         enable = false
         appId = ""
@@ -412,40 +411,40 @@ defaultContentLanguage = 'zh-cn'
         highlight = true
         enableQQ = false
         serverURLs = ""
-        # emoji 数据文件名称，默认是 "google.yml"
+        # emoji data file name, default is "google.yml"
         # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
-        # 位于 "themes/FixIt/assets/lib/valine/emoji/" 目录
-        # 可以在你的项目下相同路径存放你自己的数据文件：
+        # located in "themes/FixIt/assets/lib/valine/emoji/" directory
+        # you can store your own data files in the same path under your project:
         # "assets/lib/valine/emoji/"
         emoji = ""
-        commentCount = true # 
-      #  Waline 评论系统设置 (https://waline.js.org)
+        commentCount = true # FixIt 0.2.13 | NEW
+      # FixIt 0.2.16 | CHANGED Waline comment config (https://waline.js.org)
       [params.page.comment.waline]
         enable = false
         serverURL = ""
-        pageview = false # 
+        pageview = false # FixIt 0.2.15 | NEW
         emoji = ["//unpkg.com/@waline/emojis@1.1.0/weibo"]
         meta = ["nick", "mail", "link"]
         requiredMeta = []
         login = "enable"
         wordLimit = 0
         pageSize = 10
-        imageUploader = false # 
-        highlighter = false # 
-        comment = false # 
-        texRenderer = false # 
-        search = false # 
-        recaptchaV3Key = "" # 
-        turnstileKey = "" # 
-        reaction = false # 
-      # Facebook 评论系统设置 (https://developers.facebook.com/docs/plugins/comments)
+        imageUploader = false # FixIt 0.2.15 | NEW
+        highlighter = false # FixIt 0.2.15 | NEW
+        comment = false # FixIt 0.2.15 | NEW
+        texRenderer = false # FixIt 0.2.16 | NEW
+        search = false # FixIt 0.2.16 | NEW
+        recaptchaV3Key = "" # FixIt 0.2.16 | NEW
+        turnstileKey = "" # FixIt 0.3.8 | NEW
+        reaction = false # FixIt 0.2.18 | NEW
+      # Facebook comment config (https://developers.facebook.com/docs/plugins/comments)
       [params.page.comment.facebook]
         enable = false
         width = "100%"
         numPosts = 10
         appId = ""
-        languageCode = "zh_CN"
-      # Telegram Comments 评论系统设置 (https://comments.app)
+        languageCode = ""
+      # Telegram comments config (https://comments.app)
       [params.page.comment.telegram]
         enable = false
         siteID = ""
@@ -455,10 +454,10 @@ defaultContentLanguage = 'zh-cn'
         colorful = true
         dislikes = false
         outlined = false
-      # Commento 评论系统设置 (https://commento.io)
+      # Commento comment config (https://commento.io)
       [params.page.comment.commento]
         enable = false
-      # Utterances 评论系统设置 (https://utteranc.es)
+      # Utterances comment config (https://utteranc.es)
       [params.page.comment.utterances]
         enable = false
         # owner/repo
@@ -467,7 +466,7 @@ defaultContentLanguage = 'zh-cn'
         label = ""
         lightTheme = "github-light"
         darkTheme = "github-dark"
-      #  Twikoo 评论系统设置 (https://twikoo.js.org/)
+      # FixIt 0.2.13 | NEW Twikoo comment config (https://twikoo.js.org/)
       [params.page.comment.twikoo]
         enable = false
         envId = ""
@@ -475,24 +474,25 @@ defaultContentLanguage = 'zh-cn'
         path = ""
         visitor = true
         commentCount = true
-        #  启用 lightgallery 支持
+        # FixIt 0.2.17 | CHANGED enable lightgallery support
         lightgallery = false
-        #  启用 Katex 支持
+        # FixIt 0.2.17 | NEW enable Katex support
         katex = false
-      #  Giscus 评论系统设置
+      # FixIt 0.2.14 | NEW Giscus comments config
       [params.page.comment.giscus]
         enable = true
         repo = "mxxws/mxxws.github.io"
-        repoId = "{{ .Env.GISCUS_REPO_ID }}"
+        repoId = "R_kgDOOYdrUw"
         category = "Announcements"
-        categoryId = "{{ .Env.GISCUS_CATEGORY_ID }}"
+        categoryId = "DIC_kwDOOYdrU84CpHtI"
         mapping = "pathname"
-        origin = "https://giscus.app" #  Or set it to your self-hosted domain
-        strict = "0" # 
+        origin = "https://giscus.app" # FixIt NEW | 0.3.7 Or set it to your self-hosted domain
+        strict = "0" # FixIt NEW | 0.2.18
         term = ""
         reactionsEnabled = "1"
         emitMetadata = "0"
         inputPosition = "bottom" # ["top", "bottom"]
+        lang = "zh-CN"
         lightTheme = "light"
         darkTheme = "dark"
         lazyLoad = true
