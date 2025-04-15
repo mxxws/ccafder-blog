@@ -483,9 +483,9 @@ defaultContentLanguage = 'zh-cn'
       [params.page.comment.giscus]
         enable = true
         repo = "mxxws/mxxws.github.io"
-        repoId = "R_kgDOOYdrUw"
+        repoId = "{{ .Env.GISCUS_REPO_ID }}"
         category = "Announcements"
-        categoryId = "DIC_kwDOOYdrU84CpHtI"
+        categoryId = "{{ .Env.GISCUS_CATEGORY_ID }}"
         mapping = "pathname"
         origin = "https://giscus.app" #  Or set it to your self-hosted domain
         strict = "0" # 
