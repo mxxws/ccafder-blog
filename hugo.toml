@@ -1,7 +1,7 @@
 #根配置
 baseURL = 'https://mxxws.github.io/'
 languageCode = 'en-us'
-title = 'mxxwsの世界'
+title = '梦醒细无声'
 theme = 'FixIt'
 defaultContentLanguage = 'zh-cn'
 
@@ -92,21 +92,21 @@ defaultContentLanguage = 'zh-cn'
       gravatarEmail = ""
       avatarURL = "https://github.com/mxxws/picx-images-hosting/raw/master/mxxws-avatar.2ks3sf9q4a.webp"
       avatarMenu = ""
-      title = "mxxws"
+      title = "梦醒细无声"
       subtitle = "正是江南好风景，落花时节又逢君。"
       typeit = true
       social = true
       disclaimer = ""
     [params.home.posts]
-      enable = true
+      enable = false
       paginate = 6
 
     [params.social]
-      Email = "ccafder@gmail.com"
+      Email = ""
 
   #不蒜子计数器配置
   [params.busuanzi]
-    enable = false
+    enable = true
     source = "https://vercount.one/js"
     siteViews = true
     pageViews = true
