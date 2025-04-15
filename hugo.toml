@@ -481,12 +481,12 @@ defaultContentLanguage = 'zh-cn'
         katex = false
       #  Giscus 评论系统设置
       [params.page.comment.giscus]
-        enable = false
-        repo = ""
-        repoId = ""
-        category = ""
-        categoryId = ""
-        mapping = ""
+        enable = true
+        repo = "mxxws/mxxws.github.io"
+        repoId = "R_kgDOOYdrUw"
+        category = "Announcements"
+        categoryId = "DIC_kwDOOYdrU84CpHtI"
+        mapping = "pathname"
         origin = "https://giscus.app" #  Or set it to your self-hosted domain
         strict = "0" # 
         term = ""
