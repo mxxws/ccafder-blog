@@ -12,16 +12,18 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          fetch-depth: 0  # 确保获取完整的 Git 历史
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.145.0"
-          extended: true  # 使用 Hugo 扩展版（支持 Sass/SCSS）
+          extended: true
 
       - name: Build
-        run: hugo --minify --gc --cleanDestinationDir  # 精简命令
+        run: |
+          hugo --minify --gc --cleanDestinationDir
+          touch ./public/.nojekyll  
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -29,5 +31,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          # 可选：添加 commit 信息
           commit_message: "Deploy: ${{ github.event.head_commit.message }}"
