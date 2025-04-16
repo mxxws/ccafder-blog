@@ -1,2 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>梦醒细无声的世界</title><link>https://mxxws.github.io/</link><description>正是江南好风景，落花时节又逢君。</description><generator>Hugo 0.145.0 &amp; FixIt v0.3.18</generator><language>en-us</language><lastBuildDate>Sun, 13 Apr 2025 22:30:25 +0800</lastBuildDate><atom:link href="https://mxxws.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于我</title><link>https://mxxws.github.io/posts/b3cbf8e/</link><pubDate>Sun, 13 Apr 2025 22:30:25 +0800</pubDate><guid>https://mxxws.github.io/posts/b3cbf8e/</guid><category domain="https://mxxws.github.io/categories/draft/">Draft</category><description>&lt;p>毛泽东，东方的红太阳。&lt;/p>
-&lt;p>测试&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>梦醒细无声の世界</title><link>https://mxxws.github.io/</link><description>梦醒细无声の世界</description><generator>Hugo 0.145.0 &amp; FixIt v0.3.18</generator><language>en-us</language><lastBuildDate>Sun, 13 Apr 2025 22:30:25 +0800</lastBuildDate><atom:link href="https://mxxws.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于我</title><link>https://mxxws.github.io/posts/b3cbf8e/</link><pubDate>Sun, 13 Apr 2025 22:30:25 +0800</pubDate><guid>https://mxxws.github.io/posts/b3cbf8e/</guid><category domain="https://mxxws.github.io/categories/mxxws/">Mxxws</category><description>&lt;img src="https://github.com/mxxws/picx-images-hosting/raw/master/mxxws-avatar.2ks3sf9q4a.webp" alt="示例图片" width="200" height="150">
+&lt;blockquote>
+&lt;p>bio：业精于勤，荒于嬉；行成于思，毁于随。&lt;/p>&lt;/blockquote>
+&lt;p>生日： 1999 年 2 月&lt;/p>
+&lt;p>信仰：马列毛主义&lt;/p>
+&lt;p>理想：为全世界无产阶级解放做出自己的贡献，能够给世界上同样的年轻人启发参考，并做好榜样&lt;/p>
+&lt;p>联系方式📮：&lt;code>ccafder@gmail.com&lt;/code>&lt;/p>
+&lt;p>与各位同志共勉。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">水调歌头·重上井冈山
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">作者：毛泽东
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">久有凌云志，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">重上井冈山。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">千里来寻故地，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">旧貌变新颜。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">到处莺歌燕舞，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">更有潺潺流水，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">高路入云端。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">过了黄洋界，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">险处不须看。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">风雷动，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">旌旗奋，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">是人寰。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">三十八年过去，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">弹指一挥间。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">可上九天揽月，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">可下五洋捉鳖，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">谈笑凯歌还。
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">世上无难事，
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">只要肯登攀。&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
