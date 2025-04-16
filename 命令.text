@@ -30,7 +30,7 @@ git submodule update --remote --merge themes/FixIt
 
 或者控制台输入指令
 hugo new posts/关于ccafder.md
-
+1
 
 1
 hugo serve -e production
